@@ -28,6 +28,7 @@ const Home = () => {
                 <ArtistList />
             </div>
             <div className="section">
+                <br></br>
                 <h2>Tendances</h2>
                 <p>Plongez dans l'univers des tableaux les plus en vogue, où chaque coup de pinceau raconte une histoire et chaque toile exprime une émotion unique.</p>
                 <TrendingArtworks />

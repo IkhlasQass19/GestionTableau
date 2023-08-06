@@ -20,6 +20,7 @@ public class Tableau {
     private double prix;
     private double longeur;
     private double largeur;
+    private int annne;
     private String description;
     private String chemin;
 

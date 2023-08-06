@@ -92,6 +92,10 @@ body {
   color: white;
   text-align: center;
   padding: 10px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
 
 /* Boutons */
@@ -125,4 +129,10 @@ body {
 
 .logo h1 {
   font-size: 24px; /* Réduisez la taille du texte pour qu'il soit complémentaire au logo */
+}
+body {
+  background-image: url('./images/img7.png');
+  background-size: cover;
+  background-position: center;
+  /* Other styles */
 }
