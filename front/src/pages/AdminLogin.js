@@ -1,27 +1,33 @@
 import React, { useState } from 'react';
 import '../Style/Login.css'
+import axios from 'axios';
+
+
 const AdminLogin = ({ onLogin }) => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
 
   const handleLogin = () => {
-    // Ici, vous pouvez ajouter la logique d'authentification, par exemple, vérifier les informations
-    // de connexion avec une API ou une base de données.
-    // Pour cet exemple, nous utilisons des valeurs en dur pour démontrer le processus.
+    axios.post('http://localhost:8080/admin/SeConnecter?login=' + username + '&password=' + password)
+      .then(response => {
+        console.log(response.data);
+        localStorage.setItem('role', 'admin');
+        window.location.href = '/demande';
 
-    if (username === 'admin' && password === 'password') {
-      onLogin(true);
-    } else {
-      setError('Identifiant ou mot de passe incorrect');
-    }
+      })
+      .catch(error => {
+        setError('Identifiant ou mot de passe incorrect');
+        console.error(error);
+      });
+
   };
 
   return (
     <div className="admin-login">
-    
-      <div className="form"> 
-       <h2 className="admin-title">Connexion Administrateur</h2>
+
+      <div className="form">
+        <h2 className="admin-title">Connexion Administrateur</h2>
         <input
           type="text"
           placeholder="Nom d'utilisateur"

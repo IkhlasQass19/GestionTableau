@@ -1,48 +1,49 @@
 import React, { useState } from 'react';
 import '../Style/ArtistList.css';
-import img1 from '../images/AR1.png';
-import img2 from '../images/AR2.png';
-import img3 from '../images/ar3.png';
-
+import img1 from '../images/charb.png';
+import img2 from '../images/charles-addams.png';
+import img3 from '../images/enki-bilal.png';
+import img4 from '../images/eric-carle.png';
+import img5 from '../images/janry.png';
+import img6 from '../images/philippe-bercovici.png'
 const MostPopularArtists = () => {
   const popularArtists = [
     {
       id: 1,
-      name: 'Artiste 1',
+      name: 'Charb',
       image: img1,
-      description: 'Description de l\'artiste populaire 1.',
+      description: 'France 1967 • 2015 Dessinateurs de presse',
     },
     {
       id: 2,
-      name: 'Artiste Populaire 2',
+      name: 'Charles Addams',
       image: img2,
-      description: 'Description de l\'artiste populaire 2.',
+      description: 'États-Unis 1912 • 1988 Dessinateurs de bande dessinée',
     },
     {
       id: 3,
-      name: 'Artiste Populaire 3',
+      name: 'Enki Bilal',
       image: img3,
-      description: 'Description de l\'artiste populaire 3.',
+      description: 'France 1951 Dessinateurs de bande dessinée',
     },
     {
         id: 4,
-        name: 'Artiste Populaire 2',
-        image: img2,
-        description: 'Description de l\'artiste populaire 2.',
+        name: 'Aeric carle',
+        image: img4,
+        description: 'États-Unis 1929 • 2021 Écrivains.',
       },
       {
         id: 5,
-        name: 'Artiste Populaire 3',
-        image: img3,
-        description: 'Description de l\'artiste populaire 3.',
+        name: 'Janry',
+        image: img5,
+        description: 'Belgique 1957 Dessinateurs de bande dessinée',
       },
       {
         id: 6,
-        name: 'Artiste Populaire 3',
-        image: img3,
-        description: 'Description de l\'artiste populaire 3.',
+        name: 'Philippe Bercovici',
+        image: img6,
+        description: 'France 1963 Dessinateurs de bande dessinée',
       },
-    // ... autres artistes ...
   ];
 
   const [scrollIndex, setScrollIndex] = useState(0);
@@ -61,7 +62,7 @@ const MostPopularArtists = () => {
         &#8249;
       </button>
       <div className="artist-list">
-        {popularArtists.slice(scrollIndex * 3, (scrollIndex + 1) * 3).map((artist) => (
+        {popularArtists.slice(scrollIndex * 4, (scrollIndex + 10) * 4).map((artist) => (
           <div key={artist.id} className="popular-artist">
             <div className="artist-image">
               <img src={artist.image} alt={artist.name} />

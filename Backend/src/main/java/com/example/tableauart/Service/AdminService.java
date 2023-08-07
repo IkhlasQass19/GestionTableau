@@ -27,8 +27,7 @@ public class AdminService {
     // Connection
     public Admin SeConnecter(String login, String password) {
         Admin admin = adminRepository.findByLogin(login);
-        System.out.println("l objet de "+admin.getLogin());
-
+        //System.out.println("l objet de "+admin.getLogin());
         if (admin != null && verifyPassword(password, admin.getPassword())) {
             return admin;
         }

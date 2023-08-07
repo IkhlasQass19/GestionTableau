@@ -21,6 +21,7 @@ const Header = () => {
         localStorage.removeItem('role');
         window.location.reload(); // Reload the page to reflect the changes
       }
+    
     });
   }
   const role = localStorage.getItem('role'); 
@@ -47,7 +48,7 @@ const Header = () => {
                 <Link to="/Addtable">Ajouter un tableau</Link>
               </li>
               <li className="nav-item">
-              <Link to="" onClick={handleLogout}>Se déconnecter</Link>
+              <Link onClick={handleLogout}>Se déconnecter</Link>
               </li>
             </>
           )}
