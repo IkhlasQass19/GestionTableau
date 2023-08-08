@@ -1,4 +1,6 @@
-This is some screens
+# CMD FOR  INSTAL : npm install
+# TO START : npm start
+# This is some screens
 ![page1](https://github.com/ikhlas1936/GestionTableau/assets/129891260/6b1f57be-7401-409f-9426-a53ee7ce73ea)
 ![5](https://github.com/ikhlas1936/GestionTableau/assets/129891260/7cf31db4-8be4-4f58-9a84-647efc61a285)
 ![11](https://github.com/ikhlas1936/GestionTableau/assets/129891260/0895f8ad-b351-4427-9bd8-862403e2211d)
