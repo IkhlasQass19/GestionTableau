@@ -1,0 +1,102 @@
+/* DemandesList.css */
+
+.demandes-list {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+  
+  background-color: #fff;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+td {
+  vertical-align: middle;
+}
+
+
+.actions {
+  display: flex;
+  justify-content: space-around;
+}
+
+.accept-icon,
+.refuse-icon {
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.accept-icon {
+  color: #2ecc71;
+}
+
+.refuse-icon {
+  color: #e74c3c;
+}
+
+.confirm-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.confirm-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.confirm-content p {
+  margin: 0;
+  text-align: center;
+}
+
+.confirm-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.confirm-buttons button {
+  margin: 0 10px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.confirm-buttons button.accept {
+  background-color: #2ecc71;
+  color: white;
+}
+
+.confirm-buttons button.refuse {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.confirm-buttons button:hover {
+  background-color: #34495e;
+}
