@@ -17,4 +17,4 @@ Avant de commencer, assurez-vous d'avoir installé les éléments suivants :
    spring.datasource.password=votre_mot_de_passs
   et executer le code create.sql 
 ### pour le stockage des images :
-chemin.image = ajouter vote chemin deprojet + \\GestionTableau\\front\\public\\imagestableau\\
+chemin.image = ajouter vote chemin deprojet + `\\GestionTableau\\front\\public\\imagestableau\\`
